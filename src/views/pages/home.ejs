@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Seavent</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- style -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top mb-3">
+      <div class="container">
+        <a class="navbar-brand fw-bold mx-2" style="color: #4085ca" href="#"
+          >Seavent</a
+        >
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <form
+            class="d-flex align-items-center ms-3 my-3 search-bar"
+            role="search"
+          >
+            <input
+              class="form-control me-2 rounded-5"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button
+              class="btn d-flex justify-content-center align-items-center rounded-4"
+              style="background-color: #4085ca; height: 30px"
+              type="submit"
+            >
+              <i class="bi bi-search" style="color: #ffffff"></i>
+            </button>
+          </form>
+
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-5 pe-5">
+            <li class="nav-item">
+              <a
+                class="nav-link px-4"
+                style="font-weight: 600"
+                aria-current="page"
+                href="#about"
+                >About Us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-4" style="font-weight: 600" href="/login"
+                >Log In</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-4" style="font-weight: 600" href="/register"
+                >Sign Up</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- recomend page -->
+    <div class="container">
+      <h1 class="text-start mt-5 pt-5 pb-3 fw-bold fs-3 mx-4">
+        Great Event For You!
+      </h1>
+      <div class="row justify-content-center">
+        <!-- CAROUSEL SLIDE -->
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active c-item">
+              <img
+                src="img/konser.jpeg (1).crdownload"
+                class="c-img d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h2>Sound Project</h2>
+                <button class="btn btn-primary my-2">More Info</button>
+              </div>
+            </div>
+            <div class="carousel-item c-item">
+              <img
+                src="img/jakartafair.png"
+                class="c-img d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h2>Jakarta Fair</h2>
+                <button class="btn btn-primary my-2">More Info</button>
+              </div>
+            </div>
+            <div class="carousel-item c-item">
+              <img
+                src="img/pandora.png"
+                class="c-img d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h2>Pandora</h2>
+                <button class="btn btn-primary my-2">More Info</button>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Event Category -->
+    <div class="d-flex justify-content-evenly mx-3 my-5 category">
+      <div class="cat-icon col-1 mx-2 text-center">
+        <img class="mb-2" style="width: 4rem" src="img/concert.png" alt="" />
+        <p>Concert</p>
+      </div>
+      <div class="cat-icon col-1 mx-2 text-center">
+        <img class="mb-2" style="width: 4rem" src="img/workshop.png" alt="" />
+        <p>Workshop</p>
+      </div>
+      <div class="cat-icon col-1 mx-2 text-center">
+        <img class="mb-2" style="width: 4rem" src="img/hobbies.png" alt="" />
+        <p>Hobbies</p>
+      </div>
+      <div class="cat-icon col-1 mx-2 text-center">
+        <img class="mb-2" style="width: 4rem" src="img/culinear.png" alt="" />
+        <p>Culinear</p>
+      </div>
+      <div class="cat-icon col-1 mx-2 text-center">
+        <img class="mb-2" style="width: 4rem" src="img/Holiday.png" alt="" />
+        <p>Holiday</p>
+      </div>
+      <div class="cat-icon col-1 mx-2 text-center">
+        <img class="mb-2" style="width: 4rem" src="img/Sport.png" alt="" />
+        <p>Sport</p>
+      </div>
+    </div>
+
+    <!-- grid events -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card my-3 rounded-3">
+            <img src="img/image 1.png" alt="" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Event</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                ratione aperiam iure expedita, mollitia amet facere a
+                dignissimos? Aut quasi omnis voluptatem animi molestias iste
+                aperiam blanditiis ad, labore illo.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card my-3 rounded-3">
+            <img src="img/image 1.png" alt="" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Event</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                ratione aperiam iure expedita, mollitia amet facere a
+                dignissimos? Aut quasi omnis voluptatem animi molestias iste
+                aperiam blanditiis ad, labore illo.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card my-3 rounded-3">
+            <img src="img/image 1.png" alt="" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Event</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                ratione aperiam iure expedita, mollitia amet facere a
+                dignissimos? Aut quasi omnis voluptatem animi molestias iste
+                aperiam blanditiis ad, labore illo.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card my-3 rounded-3">
+            <img src="img/image 1.png" alt="" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Event</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                ratione aperiam iure expedita, mollitia amet facere a
+                dignissimos? Aut quasi omnis voluptatem animi molestias iste
+                aperiam blanditiis ad, labore illo.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card my-3 rounded-3">
+            <img src="img/image 1.png" alt="" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Event</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                ratione aperiam iure expedita, mollitia amet facere a
+                dignissimos? Aut quasi omnis voluptatem animi molestias iste
+                aperiam blanditiis ad, labore illo.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card my-3 rounded-3">
+            <img src="img/image 1.png" alt="" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Event</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                ratione aperiam iure expedita, mollitia amet facere a
+                dignissimos? Aut quasi omnis voluptatem animi molestias iste
+                aperiam blanditiis ad, labore illo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Us & Footer -->
+
+    <section
+      class="about-section text-center"
+      style="
+        background: linear-gradient(135deg, #3d7ec0, #1f4264);
+        color: white;
+      "
+    >
+      <div class="container py-4">
+        <h1 class="fw-bold">
+          Connecting You to the Best Events, Anytime, Anywhere
+        </h1>
+        <p class="mt-4">
+          Welcome to Seavent, your ultimate destination for discovering events
+          happening around you. Whether you're looking for concerts, festivals,
+          sports events, workshops, or any local gatherings, Seavent has you
+          covered. Our platform is designed to make event discovery easy, fun,
+          and tailored to your interests.
+        </p>
+      </div>
+      <div
+        class="container text-light text-center"
+        style="color: white; padding: 20px 0"
+        id="about"
+      >
+        <p class="display-5 mb-3 fw-bold">Seavent</p>
+        <small class="text-white-50"
+          >&copy; Copyright by Seavent. All rights reserved</small
+        >
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

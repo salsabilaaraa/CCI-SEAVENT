@@ -1,0 +1,25 @@
+GET http://localhost:1337/healthcheck
+
+###
+POST http://localhost:1337/api/users
+Content-Type: application/json
+
+{
+   "name": "Kevin",
+   "email": "kevinid07@gmail.com",
+   "password": "cekcek",
+   "passwordConfirmation": "cekcek"
+}
+
+###
+POST http://localhost:1337/api/sessions
+Content-Type: application/json
+
+{
+   "email": "kevinid07@gmail.com",
+   "password": "cekcek"
+}
+
+
+###
+GET http://localhost:1337/api/sessions

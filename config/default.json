@@ -1,0 +1,9 @@
+{
+   "port": 1337,
+   "host": "localhost",
+   "saltWorkFactor": 10,
+   "accessTokenTtl": "15m",
+   "refreshTokenTtl": "1y",
+   "publicKey": "-----BEGIN PUBLIC KEY-----\nWKDOWODJKWIDHIWDHHJaihiadhIWDHIAHDKAND\n-----END PUBLIC KEY-----",
+   "privateKey": "-----BEGIN PRIVATE KEY-----\nJJAIAWVABudgaUGHSIHUamihadw\n-----END PRIVATE KEY-----"
+ }
